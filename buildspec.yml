@@ -1,0 +1,12 @@
+version: 0.2
+
+run-as: andy
+
+phases:
+  test:
+    run-as: andy
+    on-failure: ABORT
+    commands:
+      - echo start
+    finally:
+      - echo OK!
