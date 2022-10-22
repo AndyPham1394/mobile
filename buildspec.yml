@@ -1,10 +1,7 @@
 version: 0.2
 
-run-as: andy
-
 phases:
   post_build:
-    run-as: andy
     on-failure: ABORT
     commands:
       - echo start
