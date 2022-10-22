@@ -3,7 +3,7 @@ version: 0.2
 run-as: andy
 
 phases:
-  test:
+  post_build:
     run-as: andy
     on-failure: ABORT
     commands:
