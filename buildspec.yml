@@ -1,7 +1,7 @@
 version: 0.2
 
 phases:
-  post_build:
+  pre_build:
     on-failure: ABORT
     commands:
       - echo start
