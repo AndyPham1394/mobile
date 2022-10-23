@@ -6,7 +6,7 @@ phases:
     commands:
       - echo start
       - apt-get update
-      - apt-get install npm
+      - apt install npm
       - npm install -g n
       - n 12.13.0
     finally:
