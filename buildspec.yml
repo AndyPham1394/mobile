@@ -17,6 +17,6 @@ phases:
     finally:
       - echo OK!
      
-  artifacts:
+artifacts:
   files:
     - package.json
