@@ -6,11 +6,17 @@ phases:
       nodejs: 12  
     commands:
       - echo using node 12
+      - npm install -g jest
       
   pre_build:
     on-failure: ABORT
     commands:
       - echo start pre-build stage
       - n 12.13.0
+      - 
     finally:
       - echo OK!
+     
+  artifacts:
+  files:
+    - package.json
