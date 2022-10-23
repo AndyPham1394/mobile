@@ -1,13 +1,16 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      nodejs: 12  
+    commands:
+      - echo using node 12
+      
   pre_build:
     on-failure: ABORT
     commands:
-      - echo start
-      - apt-get update
-      - apt install npm
-      - npm install -g n
+      - echo start pre-build stage
       - n 12.13.0
     finally:
       - echo OK!
