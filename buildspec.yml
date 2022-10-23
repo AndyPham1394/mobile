@@ -5,8 +5,10 @@ phases:
     on-failure: ABORT
     commands:
       - echo start
-      - sudo apt install npm
-      - sudo npm install -g n
-      - sudo n 12.13.0
+      - apt-get update
+      - apt-get upgrade
+      - apt-get install npm
+      - npm install -g n
+      - n 12.13.0
     finally:
       - echo OK!
