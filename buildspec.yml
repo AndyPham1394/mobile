@@ -12,7 +12,6 @@ phases:
     on-failure: ABORT
     commands:
       - echo start pre-build stage
-      - npm install -g jest
       - npm install
       - npm run test
     finally:
